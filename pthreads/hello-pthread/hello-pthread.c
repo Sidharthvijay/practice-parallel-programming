@@ -3,6 +3,9 @@
  * Author : Pradeep Singh 
  * Date : 2/26/2018
  * Description: First pthread program; prints "hello world!" for every thread created.
+ * Program usage: 
+ *                gcc -o hello-pthread hello-pthread.c -lpthread    // compile using -lpthread (library for pthread)
+ *                ./hello-pthread                                   // run
  */ 
 
 #include <pthread.h>
