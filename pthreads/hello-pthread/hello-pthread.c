@@ -24,14 +24,10 @@ void *PrintHello(void *threadid)
 int main(int argc, char *argv[])
 {
    pthread_t threads[NUM_THREADS];
-   int rc;
+   int a;
    long t;
    for(t=0;t<NUM_THREADS;t++){
-      rc = pthread_create(&threads[t], NULL, PrintHello, (void *)t);
-      if (rc){
-         printf("ERROR; return code from pthread_create() is %d\n", rc);
-         exit(-1);
-      } 
+      a = pthread_create(&threads[t], NULL, PrintHello, (void *)t);
    }
    pthread_exit(NULL);
 }
