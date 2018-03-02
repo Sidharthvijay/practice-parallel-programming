@@ -1,0 +1,17 @@
+#!/bin/sh
+#Usage: qsub -v T=16 batch.mat-mat
+
+#PBS -V
+#PBS -l nodes=node13:ppn=16
+#PBS -N mat-mat
+#PBS -j oe
+#PBS -r n
+#PBS -q batch
+
+cd $PBS_O_WORKDIR
+
+HOST=`hostname`
+echo "Ran on $HOST"
+
+./mat-mat $T
+
