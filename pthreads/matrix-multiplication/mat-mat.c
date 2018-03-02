@@ -1,4 +1,3 @@
-
 /*
  * File Name: mat-mat.c
  * Author: Pradeep Singh
