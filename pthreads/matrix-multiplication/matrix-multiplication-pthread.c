@@ -17,7 +17,7 @@
  *                             - gcc -O1 mat-mat.c -o mat-mat                           // optimization,
  *                                                                                      // replace -O1 with -O2 and - O3
  *
- *              PBS Usage: - qsub batch.mat-mat                                         // submit job
+ *              PBS Usage: - qsub -v T=8 batch.mat-mat                                  // submit job, where T is # of threads
  *                         - qstat                                                      // check job status
  *                         - cat mat-mat.job_id                                         // check o/p
  */
