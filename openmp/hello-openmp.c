@@ -1,6 +1,7 @@
 /*
  * Filename: hello_openmp.c
  * Author: Pradeep Singh
+ * Email: psingh2@sdsu.edu
  * Date: 3/8/2018
  */
 
