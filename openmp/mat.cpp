@@ -1,5 +1,5 @@
 
-*
+/*
  * Filename: Mat.cpp
  * Author: Pradeep Singh
  * Date: 3/12/2018
@@ -91,7 +91,6 @@ int main(int argc, char *argv[]) {
 
    return 0;
 }
-
 
 
 //Performs the m by n times n by o matrix multiplicaton
