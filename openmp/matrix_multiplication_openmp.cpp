@@ -1,5 +1,5 @@
 /*
- * Filename: mat.cpp
+ * Filename: matrix_multiplication_openmp.cpp
  * Author: Pradeep Singh
  * Date: 3/12/2018
  * Description: Matrix - Matrix multiplication using OpenMP.
