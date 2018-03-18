@@ -1,5 +1,11 @@
 /*
- *
+ * Filename: matrix_multiplication_openmp.c
+ * Author: Pradeep Singh
+ * Date: 3/12/2018
+ * Description: Matrix - Matrix multiplication using OpenMP.
+ *              This program performs matrix matrix multiplication in parallel via
+ *              openmp for matricies of size m by n and n by o => result is m by o
+ *              and then outputs the time required for the parallel operation.
  */
 
 #include <stdio.h>
