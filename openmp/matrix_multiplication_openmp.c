@@ -18,7 +18,6 @@
  *                           - cat mat.ojob_id                                      // check o/p
  */
 
-
 // Include the necessary header files
 #include <stdio.h>
 #include <stdlib.h>
