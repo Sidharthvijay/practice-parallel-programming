@@ -44,8 +44,7 @@ int main(int argc, char *argv[])
       fprintf( stderr, "%s <number of threads>\n", argv[0] );
       return -1;
    }
-
-
+   
    thread_count = atoi( argv[1] );
 
    int i, j, k;
@@ -77,12 +76,10 @@ int main(int argc, char *argv[])
    for (i=0;i<m;i++)                                      /* allocating memory to col */
        result[i] = (double *) malloc(o * sizeof(double));
 
-
 /* transpose Matrix */
    trans = (double **) malloc(o * sizeof(double *));     /* allocating memory to rows */
    for (i=0;i<o;i++)                                     /* allocating memory to col */
        trans[i] = (double *) malloc(m * sizeof(double));
-
 
 /* Generating matrix elements with random numbers between 0 and 1 */
    srand(time(NULL));                                 /* srand() sets the seed for rand() */
@@ -155,8 +152,3 @@ int main(int argc, char *argv[])
 
    return 0;
 }
-
-
-   
-   
-
