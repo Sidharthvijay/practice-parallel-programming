@@ -24,7 +24,6 @@ int thread_count = 1;        //Default initialization of global thread count
 
 void multiply(double ** &mat1,double ** &mat2,double ** &res,int m,int n,int o);
 void transpose(double ** &res, int m, int o);
-void printer(double ** &mat, int row, int col); //For debugging only
 void matAlloc(double ** &mat, int row, int col);
 void matClean(double ** &mat, int row);
 void matFill(double ** &mat, int row, int col);
@@ -107,18 +106,6 @@ void transpose(double ** &res, int row, int col) {
         res = temp;
 }
 
-/*
-Printer Function for Debugging Purposes Only
-void printer(double ** &mat, int row, int col) {
-        for(int i=0; i<row; i++) {
-                for(int j=0; j<col; j++) {
-                        cout << mat[i][j] << " ";
-                }
-                cout << "\n";
-        }
-        cout << "\n";
-}
-*/
 /* Function to allocate memoery */
 void matAlloc(double ** &mat, int row, int col) {
         mat = new double*[row];
