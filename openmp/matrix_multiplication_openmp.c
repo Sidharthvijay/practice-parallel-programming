@@ -1,5 +1,5 @@
 /*
- * Filename: mat.c
+ * Filename: matrix_multiplication_openmp.c
  * Author: Pradeep Singh
  * Date:  03/12/18
  * Description: Matrix Multiplication using OpenMP.
