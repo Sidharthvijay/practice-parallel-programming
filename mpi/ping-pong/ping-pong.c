@@ -43,7 +43,8 @@ int main ( int argc, char *argv[] )
      printf("Usage: <number_of_packets> Eg: 10,000 \n");
      return 0;
   }
-char* end_ptr_for_strtol;
+
+  char* end_ptr_for_strtol;
   double N = strtol(argv[1], &end_ptr_for_strtol, 10);
   double* x;
   x = (double*)malloc(N*sizeof(double));
@@ -83,7 +84,8 @@ char* end_ptr_for_strtol;
 
         }
    }
-else if (rank == proc_B) {
+
+   else if (rank == proc_B) {
         /* Process B sets the message size */
         for (length=1; length<=N; length+=1000) {
             /* Process B receives and then sends the message back 1000 times */
@@ -101,6 +103,3 @@ else if (rank == proc_B) {
 
    return 0;
 }
-
-   
-  
