@@ -10,8 +10,6 @@
  * 
  *  usage: make
  *          qsub batch.lap 
- * 
- * 
  */
 
 #include <stdio.h>
