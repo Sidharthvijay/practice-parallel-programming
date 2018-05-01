@@ -1,0 +1,18 @@
+#!/bin/sh
+#Usage:qsub batch.lap
+
+#PBS -V
+#PBS -l nodes=node8:ppn=4
+#PBS -l walltime=00:10:00
+#PBS -N lap
+#PBS -j oe
+#PBS -r n
+#PBS -q batch
+
+cd $PBS_O_WORKDIR
+NCORES=`wc -w < $PBS_NODEFILE`
+
+HOST=`hostname`
+echo "batch.lap ran on $HOST with $NCORES cores"
+
+mpirun -n 4 ./lap
