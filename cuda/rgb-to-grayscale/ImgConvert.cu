@@ -3,7 +3,6 @@
 #include<cuda.h>
 #include<sys/time.h>
 
-
 //Macros
 #define ROWS 400	//No. of rows in orig image
 #define COLS 640	//No. of cols in orig image
