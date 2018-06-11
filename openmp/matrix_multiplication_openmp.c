@@ -48,7 +48,6 @@ int main(int argc, char *argv[])
    thread_count = atoi( argv[1] );
 
    int i, j, k;
-
    struct timeval start, end;
 
    omp_set_dynamic(0);
