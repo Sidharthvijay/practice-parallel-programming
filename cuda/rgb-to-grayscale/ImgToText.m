@@ -2,16 +2,13 @@
 % Filename: ImgToText.m
 % Date: May 10, 2018
 
-%Description: This program stores the RGB image in a matrix form in 
-%Input.txt file. This program also reads Output.txt file and shows the Gray
-%scale image.
+% Description: This program stores the RGB image in a matrix form in Input.txt file. 
+% This program also reads Output.txt file and shows the Gray scale image.
 
-%%
 clear;
 clc;
 close all;
 
-%%
 I = imread('./image.jpg');
 
 figure();
@@ -33,17 +30,14 @@ end
 
 fclose(fptr);
 
-%%
 J=rgb2gray(I);
 figure();
 imshow(J);    %Show Gray Image
 title('Gray Image created using MATLAB');
 
-%%
 Mat = uint8(importdata('./Output.txt'));
 figure();
 imshow(Mat);    %Reconstructed image
 title('Gray image created using CUDA');
 
-%%
 Error = J-Mat;  %Error between MATLAB generated Gray scale image and ImgConvert.cu program's generated
