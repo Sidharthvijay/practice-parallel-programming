@@ -1,9 +1,9 @@
-//Header files
+// Header files
 #include<stdio.h>
 #include<cuda.h>
 #include<sys/time.h>
 
-//Macros
+// Macros
 #define ROWS 400	//No. of rows in orig image
 #define COLS 640	//No. of cols in orig image
 #define PLANES 3	//No. of planes in orig image
@@ -21,7 +21,7 @@
                } while (0)   
 
 
-/*This function converts pixel intensity from RGB value to Gray scale */
+/* This function converts pixel intensity from RGB value to Gray scale */
 void RGB2GRAY(uchar4 *In, uint8_t *Gray){
 	
 	int ii=0;	
@@ -33,7 +33,7 @@ void RGB2GRAY(uchar4 *In, uint8_t *Gray){
 }	//End of RGB2GRAY 
 
 
-/*This function converts pixel intensity from RGB value to Gray scale */
+/* This function converts pixel intensity from RGB value to Gray scale */
 __global__ void CUDA_RGB2GRAY(uchar4 *In, uint8_t *Gray){
 	
 	const long ii = threadIdx.x + blockDim.x*blockIdx.x;	//Thread initialization
@@ -47,7 +47,7 @@ __global__ void CUDA_RGB2GRAY(uchar4 *In, uint8_t *Gray){
 }	//End of CUDA_RGB2GRAY 
 
 
-/*This function checks if the device (GPU) is available */
+/* This function checks if the device (GPU) is available */
 int CheckDevice(int rank)
 {
         int DeviceCount, Device;
