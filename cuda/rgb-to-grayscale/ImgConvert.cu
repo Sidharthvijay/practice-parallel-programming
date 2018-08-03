@@ -10,7 +10,7 @@
 #define MASTER 0	//In Future, this code can be used with MPI
 
 #define CUDA_SAFE_CALL(call)														 \
-			do{                                                                      \
+			do{                                                          \
                  cudaError_t err = call;                                             \
                  if(err != cudaSuccess)                                              \
                  {                                                                   \
